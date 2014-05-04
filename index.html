@@ -5,8 +5,10 @@
 	<title>你好</title>
 </head>
 <body>
-	<h1>这是我的第一个github page</h1>
-	<p>整个故事都变得离奇和乖离</p>
-	<p>我正在试图使用更好的方式</p>
+	<h3>
+		[git] warning: LF will be replaced by CRLF | fatal: CRLF would be replaced by LF
+	</h3>
+	<p>这个警告的原因是Windows使用回车和换行两个字符来结束一行，而Mac和Linux只使用换行一个字符。Git可以在你提交时自动地把行结束符CRLF转换成LF，而在签出代码时把LF转换成CRLF。用core.autocrlf来打开此项功能，如果是在Windows系统上，把它设置成true,在其他系统设置为input</p>
+	<p>$ git config --global core.autocrlf true</p>
 </body>
 </html>
